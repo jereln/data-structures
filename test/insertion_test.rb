@@ -6,9 +6,9 @@ require 'benchmark'
 describe 'Insertion tests' do
   before do
     @random = [9, 4, 7, 2, 8, 3, 1, 6, 5]
-    @best   = (1..1000).to_a
+    @best   = (1..10000).to_a
     @worst  = @best.reverse
-    @rand   = (1..1000).to_a.shuffle
+    @rand   = (1..10000).to_a.shuffle
   end
 
   it 'sorts an array' do
@@ -17,11 +17,11 @@ describe 'Insertion tests' do
   end
 
   def test_benchmark
-    puts 'Best Case'
+    puts 'Best Case insertion'
     puts Benchmark.measure { Sort.insertion(@best) }
-    puts 'Worst Case'
+    puts 'Worst Case insertion'
     puts Benchmark.measure { Sort.insertion(@worst) }
-    puts 'Random'
+    puts 'Random insertion'
     puts Benchmark.measure { Sort.insertion(@rand) }
   end
 end
