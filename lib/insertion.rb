@@ -1,10 +1,9 @@
 class Sort
   def self.insertion(array)
     (1...array.length).each do |num|
-      value = num
-      while value > 0 && (array[value-1] > array[value]) do
-        array[value], array[value - 1] = array[value -1], array[value]
-        value -= 1
+      while num > 0 && (array[num-1] > array[num]) do
+        array[num], array[num - 1] = array[num -1], array[num]
+        num -= 1
       end
     end
     array
