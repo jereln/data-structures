@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/benchmark'
-require 'merge'
+require 'quick'
 require 'benchmark'
 
 describe 'Merge tests' do
@@ -12,16 +12,16 @@ describe 'Merge tests' do
   end
 
   it 'sorts an array' do
-    array = Sort.merge_sort(@random)
+    array = Sort.quick(@random)
     assert_equal (1..9).to_a, array
   end
 
   def test_benchmark
-    puts 'Best Case merge'
-    puts Benchmark.measure { Sort.merge_sort(@best) }
-    puts 'Worst Case merge'
-    puts Benchmark.measure { Sort.merge_sort(@worst) }
-    puts 'Random merge'
-    puts Benchmark.measure { Sort.merge_sort(@rand) }
+    puts 'Best Case quick'
+    puts Benchmark.measure { Sort.quick(@best) }
+    puts 'Worst Case quick'
+    puts Benchmark.measure { Sort.quick(@worst) }
+    puts 'Random quick'
+    puts Benchmark.measure { Sort.quick(@rand) }
   end
 end
