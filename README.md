@@ -11,3 +11,4 @@ After some research online and watching a video on merge sort, I was able to gra
 ##Resources
 http://en.wikipedia.org/wiki/Insertion_sort
 https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)
+http://davidkariuki.com/blog/2014/05/04/a-quicksort-in-place-implementation-in-ruby
