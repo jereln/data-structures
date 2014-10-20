@@ -3,7 +3,7 @@ class Sort
     return array if array.length == 1
 
     merge(
-      merge_sort(array.shift(array.length / 2 )),
+      merge_sort(array.shift(array.length / 2)),
       merge_sort(array)
       )
   end

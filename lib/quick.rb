@@ -1,7 +1,6 @@
 class Sort
-
   def self.quick(left = 0, right = -1)
-    return self if self.length <= 1
+    return self if length <= 1
     if left < right
       pivot = rand(left...right)
       new_pivot = partition(left, right, pivot)
