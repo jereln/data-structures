@@ -3,7 +3,7 @@ class Sort
     return array if array.length == 1
 
     merge(
-      merge_sort(array.shift(array.length / 2 )),
+      merge_sort(array.shift(array.length / 2)),
       merge_sort(array)
       )
   end
@@ -11,11 +11,7 @@ class Sort
   def self.merge(left, right)
     sorted = []
     until left.empty? || right.empty?
-      if left.first < right.first
-        sorted << left.shift
-      else
-        sorted << right.shift
-      end
+      left.first < right.first ? sorted << left.shift : sorted << right.shift
     end
     sorted + left + right
   end

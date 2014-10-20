@@ -12,16 +12,16 @@ describe 'Merge tests' do
   end
 
   it 'sorts an array' do
-    array = Sort.quick(@random)
-    assert_equal (1..9).to_a, array
+    array = @random.quick
+    assert_equal((1..9).to_a, array)
   end
 
   def test_benchmark
     puts 'Best Case quick'
-    puts Benchmark.measure { Sort.quick(@best) }
+    puts Benchmark.measure { @best.quick }
     puts 'Worst Case quick'
-    puts Benchmark.measure { Sort.quick(@worst) }
+    puts Benchmark.measure { @worst.quick }
     puts 'Random quick'
-    puts Benchmark.measure { Sort.quick(@rand) }
+    puts Benchmark.measure { @random.quick }
   end
 end

@@ -13,7 +13,7 @@ describe 'Insertion tests' do
 
   it 'sorts an array' do
     array = Sort.insertion(@random)
-    assert_equal (1..9).to_a, array
+    assert_equal((1..9).to_a, array)
   end
 
   def test_benchmark
