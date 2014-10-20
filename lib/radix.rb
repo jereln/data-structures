@@ -1,7 +1,6 @@
 class Sort
   def self.radix(array)
     rounds = array.max.to_s.length
-
     rounds.times do | round |
       buckets = []
       10.times  { buckets << [] }
