@@ -1,15 +1,22 @@
-class Sort
-  def self.radix(array)
-    rounds = array.max.to_s.length
+class Array
+  def radix
+    copy = self
+    rounds = copy.max.to_s.length
+    make_the_rounds(copy, rounds)
+  end
+
+  private
+
+  def make_the_rounds(copy, rounds)
     rounds.times do | round |
       buckets = []
       10.times  { buckets << [] }
-      array.each do | n |
+      copy.each do | n |
         bucket_number = (n / 10**round) % 10
         buckets[bucket_number] << n
       end
-      array = buckets.flatten
+      copy = buckets.flatten
     end
-    array
+    copy
   end
 end

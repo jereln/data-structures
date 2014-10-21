@@ -3,15 +3,15 @@ class Array
     return self if length <= 1
     if left < right
       pivot = rand(left...right)
-      new_pivot = partion(left, right, pivot)
+      pivot_value = self[pivot]
+      new_pivot = partion(left, right, pivot, pivot_value)
       quick(left, new_pivot - 1)
       quick(new_pivot + 1, right)
     end
     self
   end
 
-  def partion(left, right, pivot)
-    pivot_value = self[pivot]
+  def partion(left, right, pivot, pivot_value)
     self[right], self[pivot] = self[pivot], self[right]
     new_index = left
     (left...right).each do |n|

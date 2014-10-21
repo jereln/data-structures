@@ -12,16 +12,16 @@ describe 'Merge tests' do
   end
 
   it 'sorts an array' do
-    array = Sort.radix(@random)
+    array = @random.radix
     assert_equal((1..9).to_a, array)
   end
 
   def test_benchmark
     puts 'Best Case radix'
-    puts Benchmark.measure { Sort.radix(@best) }
+    puts Benchmark.measure { @best.radix }
     puts 'Worst Case radix'
-    puts Benchmark.measure { Sort.radix(@worst) }
+    puts Benchmark.measure { @worst.radix }
     puts 'Random radix'
-    puts Benchmark.measure { Sort.radix(@rand) }
+    puts Benchmark.measure { @rand.radix }
   end
 end
