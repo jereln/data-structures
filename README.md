@@ -16,6 +16,9 @@ Not comparing values made this one a little different to approach than the other
 ##Singly Linked List
 Since we went over this in class, it was fairly easy to implement. Only having to worry about the current and next elements made things simpler.
 
+##Stack
+It seems that this is very similar to a singly linked list. It is a little simpler since removing an item always comes from the head meaning you dont need to worry about reassigning anything. 
+
 ##Resources
 http://en.wikipedia.org/wiki/Insertion_sort
 https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)
