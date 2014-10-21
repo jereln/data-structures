@@ -14,7 +14,7 @@ describe 'singly linked list' do
   it 'inserts a new node at the head' do
     list = SinglyLinkedList.new('first')
     list.insert('second')
-    list.head.nexxt.val.must_equal 'first'
+    list.head.next_node.val.must_equal 'first'
     list.head.val.must_equal 'second'
   end
 
@@ -29,7 +29,7 @@ describe 'singly linked list' do
     list = SinglyLinkedList.new('first')
     list.insert('second')
     list.insert('third')
-    list.search('second').must_equal list.head.nexxt
+    list.search('second').must_equal list.head.next_node
   end
 
   it 'removes a node from the list' do

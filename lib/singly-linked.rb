@@ -8,7 +8,7 @@ class SinglyLinkedList
 
   def insert(val) # inserts at the head
     current = Node.new(val)
-    current.nexxt = @head
+    current.next_node = @head
     @head = current
     @counter += 1
   end
@@ -16,12 +16,12 @@ class SinglyLinkedList
   def remove(val)
     current = @head
     if @head.val == val
-      @head = @head.nexxt
+      @head = @head.next_node
     else
-      until current.nexxt.val == val
-        current = current.nexxt
+      until current.next_node.val == val
+        current = current.next_node
       end
-      current.nexxt = current.nexxt.nexxt
+      current.next_node = current.next_node.next_node
     end
     @counter -= 1
   end
@@ -34,7 +34,7 @@ class SinglyLinkedList
     return @head if @head.val == val
     current = @head
     until current.val == val || current.val.nil?
-      current = current.nexxt
+      current = current.next_node
     end
     current
   end
@@ -49,15 +49,15 @@ class SinglyLinkedList
   def put_values_in_string(current)
     full_list = ''
     until current.nil?
-      if current.nexxt.nil?
+      if current.next_node.nil?
         full_list += "#{current.val}"
       else
         full_list += "#{current.val}, "
       end
-      current = current.nexxt
+      current = current.next_node
     end
     full_list
   end
 end
 
-Node = Struct.new(:val, :nexxt)
+Node = Struct.new(:val, :next_node)
