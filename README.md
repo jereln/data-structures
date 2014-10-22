@@ -19,6 +19,9 @@ Since we went over this in class, it was fairly easy to implement. Only having t
 ##Stack
 It seems that this is very similar to a singly linked list. It is a little simpler since removing an item always comes from the head meaning you dont need to worry about reassigning anything. 
 
+##Queue
+Since I was able to use an array, this assignment was fairly simple. My original plan was to just extend the Array class but I ran into some problems testing it. Once I created a Queue class and used the << and  .shift methods, the assignment was complete.
+
 ##Resources
 http://en.wikipedia.org/wiki/Insertion_sort
 https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)

@@ -1,23 +1,19 @@
 class Stack
-  attr_accessor :head, :counter
+  attr_reader :head, :size
 
   def initialize
-    @counter = 0
+    @size = 0
   end
 
   def push(val)
     current = Node.new(val, @head)
     @head = current
-    @counter += 1
+    @size += 1
   end
 
   def pop
     @head = @head.next_node
-    @counter -= 1
-  end
-
-  def size
-    @counter
+    @size -= 1
   end
 end
 

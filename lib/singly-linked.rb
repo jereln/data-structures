@@ -1,16 +1,16 @@
 class SinglyLinkedList
-  attr_accessor :head, :counter
+  attr_reader :size, :head
 
   def initialize(val)
     @head = Node.new(val, nil)
-    @counter = 1
+    @size = 1
   end
 
   def insert(val) # inserts at the head
     current = Node.new(val)
     current.next_node = @head
     @head = current
-    @counter += 1
+    @size += 1
   end
 
   def remove(val)
@@ -18,24 +18,16 @@ class SinglyLinkedList
     if @head.val == val
       @head = @head.next_node
     else
-      until current.next_node.val == val
-        current = current.next_node
-      end
+      current = current.next_node while current.next_node.val != val
       current.next_node = current.next_node.next_node
     end
-    @counter -= 1
-  end
-
-  def size
-    @counter
+    @size -= 1
   end
 
   def search(val)
     return @head if @head.val == val
     current = @head
-    until current.val == val || current.val.nil?
-      current = current.next_node
-    end
+    current = current.next_node until current.val == val || current.val.nil?
     current
   end
 
