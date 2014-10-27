@@ -22,6 +22,9 @@ It seems that this is very similar to a singly linked list. It is a little simpl
 ##Queue
 Since I was able to use an array, this assignment was fairly simple. My original plan was to just extend the Array class but I ran into some problems testing it. Once I created a Queue class and used the << and  .shift methods, the assignment was complete.
 
+##Hash Table
+My implementation is fairly straight-forward. The hash algorithm simply returns the sum of the characters (this has a built in error if anything except a string is passed). When a new table is created, an empty array with the size passed in is created. Each index has it's own empty array in it as well. When a key value pair is passed into the set method, it uses the hash method to set the index and places both key and value in an array and inserts it into the array at the index. To get a value, the index is found using the hash method and each key value pair is compared with the key that was passed through the hash method and the value is returned for the key that matches.
+
 ##Resources
 http://en.wikipedia.org/wiki/Insertion_sort
 https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)
