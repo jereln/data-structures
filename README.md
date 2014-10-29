@@ -25,7 +25,13 @@ Since I was able to use an array, this assignment was fairly simple. My original
 ##Hash Table
 My implementation is fairly straight-forward. The hash algorithm simply returns the sum of the characters (this has a built in error if anything except a string is passed). When a new table is created, an empty array with the size passed in is created. Each index has it's own empty array in it as well. When a key value pair is passed into the set method, it uses the hash method to set the index and places both key and value in an array and inserts it into the array at the index. To get a value, the index is found using the hash method and each key value pair is compared with the key that was passed through the hash method and the value is returned for the key that matches.
 
+##Binary Tree
+Setting up the tree nodes was fairly easy. It is just a node with a left and right child. Using the Wikipedia article on Tree Traversal, I set up pre-order, in-order, and post-order traversals. The biggest problem I ran into was getting the values inserted into an array to display the traversal.
+
+
 ##Resources
 http://en.wikipedia.org/wiki/Insertion_sort
 https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)
 http://davidkariuki.com/blog/2014/05/04/a-quicksort-in-place-implementation-in-ruby
+http://www.och.cc/blog/index.php?entry=entry070511-152543
+http://en.wikipedia.org/wiki/Tree_traversal
