@@ -27,16 +27,16 @@ describe 'hashing it up' do
     assert_equal @hash.get('54321'), 'backward'
   end
 
-  it 'can hash the dictionary' do
-    File.open('/usr/share/dict/words', 'r') do |f|
-      lines = f.readlines
-      lines.each { |line| @hash.set(line, line.reverse) }
-    end
-    File.open('/usr/share/dict/words', 'r') do |f|
-      lines = f.readlines
-      lines.each do |line|
-        @hash.get(line).must_equal line.reverse
-      end
-    end
-  end
+  # it 'can hash the dictionary' do
+  #   File.open('/usr/share/dict/words', 'r') do |f|
+  #     lines = f.readlines
+  #     lines.each { |line| @hash.set(line, line.reverse) }
+  #   end
+  #   File.open('/usr/share/dict/words', 'r') do |f|
+  #     lines = f.readlines
+  #     lines.each do |line|
+  #       @hash.get(line).must_equal line.reverse
+  #     end
+  #   end
+  # end
 end
