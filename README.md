@@ -28,6 +28,9 @@ My implementation is fairly straight-forward. The hash algorithm simply returns 
 ##Binary Tree
 Setting up the tree nodes was fairly easy. It is just a node with a left and right child. Using the Wikipedia article on Tree Traversal, I set up pre-order, in-order, and post-order traversals. The biggest problem I ran into was getting the values inserted into an array to display the traversal.
 
+##Deduplicate a Linked List
+There are two apporaches for implementing this. The first way is to use auxillary storage and push a node into a new array if its value is not already in the array. They way is to remove nodes inline by using two if blocks to compare a node to all of the other nodes and remove any duplicates. I had a minor bug where my head was always getting set to nil that was messing me up. Once I found this, imlementing the deduplication was fairly simple.
+
 
 ##Resources
 http://en.wikipedia.org/wiki/Insertion_sort
