@@ -33,8 +33,9 @@ There are two apporaches for implementing this. The first way is to use auxillar
 
 
 ##Resources
-http://en.wikipedia.org/wiki/Insertion_sort
-https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)
-http://davidkariuki.com/blog/2014/05/04/a-quicksort-in-place-implementation-in-ruby
-http://www.och.cc/blog/index.php?entry=entry070511-152543
-http://en.wikipedia.org/wiki/Tree_traversal
+http://en.wikipedia.org/wiki/Insertion_sort  
+https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)  
+http://davidkariuki.com/blog/2014/05/04/a-quicksort-in-place-implementation-in-ruby  
+http://www.och.cc/blog/index.php?entry=entry070511-152543  
+http://en.wikipedia.org/wiki/Tree_traversal  
+https://github.com/Marco-Lindsay/data-structures
