@@ -38,4 +38,5 @@ https://www.youtube.com/watch?v=TzeBrDU-JaY (Merge Sort)
 http://davidkariuki.com/blog/2014/05/04/a-quicksort-in-place-implementation-in-ruby  
 http://www.och.cc/blog/index.php?entry=entry070511-152543  
 http://en.wikipedia.org/wiki/Tree_traversal  
-https://github.com/Marco-Lindsay/data-structures
+https://github.com/Marco-Lindsay/data-structures  
+https://github.com/cenkayberkin/data-structures/blob/doubleLinkedList/lib/doublelinked_list.rb
